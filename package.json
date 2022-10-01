@@ -1,0 +1,29 @@
+{
+"name": "isie",
+"version": "0.0.1",
+"description": "This check browser type and go link tip page plugin.",
+"main": "lib/isie.js",
+"directories": {
+    "lib": "lib",
+    "test": "test"
+},
+"scripts": {
+    "test": "echo Error: no test specified && exit 1",
+    "test:browser": "live-server --port=4001 --host=localhost",
+    "test:node": "node ./test/node.js"
+},
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitguanqi/isie.git"
+},
+"keywords": [
+    "isie"
+],
+"author": "gitguanqi",
+"license": "MIT",
+"bugs": {
+    "url": "https://github.com/gitguanqi/isie/issues"
+},
+"homepage": "https://github.com/gitguanqi/isie#readme"
+}          
+        
