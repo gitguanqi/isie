@@ -1,4 +1,4 @@
-# isie
+# xqisie
 
 This check browser type and go link tip page plugin.
 
@@ -12,21 +12,21 @@ import cdn
 
 ```html
 <!-- Browser -->
-<script src="https://unpkg.com/isie/lib/isie.min.js"></script>
+<script src="https://unpkg.com/xqisie/lib/xqisie.min.js"></script>
 <!-- es module -->
 <script type="module">
-    import isie from '../lib/isie-esm.min.js';
+    import xqisie from '../lib/xqisie-esm.min.js';
 </script>
 ```
 
 **Node**:
 
 ```sh
-npm install isie
+npm install xqisie
 ```
 
 ```js
-const isie = require('isie');
+const xqisie = require('xqisie');
 ```
 
 ## Usage
@@ -34,27 +34,27 @@ const isie = require('isie');
 + check browser
 
 ```js
-const browser = isie.check();
+const browser = xqisie.check();
 console.log('Browser is:', browser);
 ```
 
 + go link
 
 ```js
-isie.goLink('./page/index.html');
+xqisie.goLink('./page/index.html');
 ```
 
 + node
 
 ```js
 const http = require('http');
-const isie = require('../lib/isie');
+const xqisie = require('../lib/xqisie');
 
 const server = http.createServer((req, res) => {
     
     if (req.url === '/') {
         const ua = req.headers['user-agent'];
-        const browser = isie.check(ua);
+        const browser = xqisie.check(ua);
         if (browser) {
             res.end('browser is:'+browser);
         } else {
@@ -64,18 +64,18 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, 'localhost', () => {
-    console.log('isie server is running on http://localhost:3000 !');
+    console.log('xqisie server is running on http://localhost:3000 !');
 });
 
 ```
 
-## View isie
+## View xqisie
 
 Run this script to view the demonstration case: `npm run test:node`, `npm run test:browser`.
 
 ## ask questions
 
-[submit your question](https://github.com/gitguanqi/isie/issues/new)
+[submit your question](https://github.com/gitguanqi/xqisie/issues/new)
 
 ## Author
 

@@ -1,8 +1,8 @@
 {
-"name": "isie",
-"version": "0.0.1",
+"name": "xqisie",
+"version": "0.0.2",
 "description": "This check browser type and go link tip page plugin.",
-"main": "lib/isie.js",
+"main": "lib/xqisie.js",
 "directories": {
     "lib": "lib",
     "test": "test"
@@ -14,16 +14,16 @@
 },
 "repository": {
     "type": "git",
-    "url": "git+https://github.com/gitguanqi/isie.git"
+    "url": "git+https://github.com/gitguanqi/xqisie.git"
 },
 "keywords": [
-    "isie"
+    "xqisie"
 ],
 "author": "gitguanqi",
 "license": "MIT",
 "bugs": {
-    "url": "https://github.com/gitguanqi/isie/issues"
+    "url": "https://github.com/gitguanqi/xqisie/issues"
 },
-"homepage": "https://github.com/gitguanqi/isie#readme"
+"homepage": "https://github.com/gitguanqi/xqisie#readme"
 }          
         

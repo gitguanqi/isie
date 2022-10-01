@@ -1,11 +1,11 @@
 const http = require('http');
-const isie = require('../lib/isie');
+const xqisie = require('../lib/xqisie');
 
 const server = http.createServer((req, res) => {
     
     if (req.url === '/') {
         const ua = req.headers['user-agent'];
-        const browser = isie.check(ua);
+        const browser = xqisie.check(ua);
         if (browser) {
             res.end('browser is:'+browser);
         } else {
@@ -15,5 +15,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, 'localhost', () => {
-    console.log('isie server is running on http://localhost:3000 !');
+    console.log('xqisie server is running on http://localhost:3000 !');
 });
